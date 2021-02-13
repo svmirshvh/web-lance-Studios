@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web-Lance Studios</title>
+		<style>
+			.studio {
+				transform: translate(-50%, -50%);
+				margin: 0;
+				left: 50%;
+				top: 50%;
+				position: absolute;
+			}
+			.rectangle {
+				animation: moveright 2s ease-in-out alternate infinite;
+			}
+			@keyframes moveright {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(100%);
+				}
+			}
+			.three {
+				border-radius: 50%;
+				transform-origin: center;
+				transform-box: fill-box;
+				animation: spin 2s ease-in-out alternate infinite;
+			}
+			@keyframes spin {
+				0% {
+					transform: rotateZ(0deg) scale(1);
+				}
+				100% {
+					transform: rotateZ(360deg) scale(1.2);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="studio">
+			<svg
+				style="margin-left: 2.7rem"
+				class="text"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="134px"
+				height="28px"
+			>
+				<path
+					class="rectangle"
+					fill-rule="evenodd"
+					fill="rgb(69, 180, 212)"
+					d="M25.000,1.000 L130.000,1.000 L130.000,4.000 L25.000,4.000 L25.000,1.000 Z"
+				></path>
+				<text
+					kerning="auto"
+					font-family="OpenSans"
+					fill="rgb(82, 82, 82)"
+					font-size="1.8rem"
+					x="0px"
+					y="26.95px"
+				>
+					web-lance
+				</text>
+				<path
+					class="three"
+					fill-rule="evenodd"
+					fill="rgb(239, 94, 94)"
+					d="M7.000,1.000 L10.000,1.000 L10.000,4.000 L7.000,4.000 L7.000,1.000 Z"
+				></path>
+				<path
+					class="three"
+					fill-rule="evenodd"
+					fill="rgb(69, 180, 212)"
+					d="M13.000,1.000 L16.000,1.000 L16.000,4.000 L13.000,4.000 L13.000,1.000 Z"
+				></path>
+				<path
+					class="three"
+					fill-rule="evenodd"
+					fill="rgb(106, 188, 106)"
+					d="M19.000,1.000 L22.000,1.000 L22.000,4.000 L19.000,4.000 L19.000,1.000 Z"
+				></path>
+			</svg>
+			<img class="lago" src="./Asset/logo-1.svg" alt="Animating Logo" />
+		</div>
+	</body>
+</html>
