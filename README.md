@@ -1,1 +1,1 @@
-# web-lance-Studios's greeting page animation
+# web-lance-Studios's greeting page SVG animation
